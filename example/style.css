@@ -1,0 +1,231 @@
+.hubspot-search-styled-field , body {
+  --s-brand-color:#007a8c;
+  --s-title-color:#2d3e50;
+  --s-text-main:#333333;
+  --s-text-light:#7c98b6;
+  --s-bg-color:#ffffff;
+  --s-border-color:#cbd6e2;
+  --s-hover-bg:#f5f8fa;
+  --s-btn-bg:#e5f5f8;
+  --s-btn-hover-bg:#d0eff5;
+  --s-focus-shadow:rgba(0,122,140,0.15);
+  --s-radius:6px; 
+  --s-img-size:50px;
+  --s-item-padding:12px;
+  --s-shadow:0 6px 16px rgba(0,0,0,0.1);
+  --highlight:var(--s-btn-hover-bg);
+  position:relative;
+  width:100%;
+  font-family:inherit;
+}
+
+ .hubspot-search-styled-field *,
+ .hubspot-search-styled-field *::before,
+ .hubspot-search-styled-field *::after { box-sizing:border-box; }
+
+ .hubspot-search-styled-bar {
+  position:relative;
+  width:100%;
+  z-index: 1000;
+}
+
+ .hubspot-search-styled-input {
+  width:100%;
+  padding:14px 16px;
+  padding-right:50px;
+  background-color:var(--s-bg-color);
+  border:1px solid var(--s-border-color);
+  border-radius:var(--s-radius);
+  font-size:16px;
+  color:var(--s-text-main);
+  line-height:1.5;
+  outline:none;
+  transition:all 0.2s ease;
+}
+
+ .hubspot-search-styled-input:focus {
+  border-color:var(--s-brand-color);
+  box-shadow:0 0 0 3px var(--s-focus-shadow);
+}
+
+ .hubspot-search-styled-open .hubspot-search-styled-input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-color: transparent; 
+    z-index: 1001; 
+    position: relative;
+ }
+
+ .hubspot-search-styled-input::placeholder { color:#99aab5; }
+
+ .hubspot-search-styled-submit {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right:4px;
+  width:44px;
+  height:44px;
+  padding:0;
+  margin:0;
+  background:transparent !important;
+  border:none !important;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--s-brand-color);
+  border-radius:var(--s-radius);
+  transition:background 0.2s ease;
+  z-index: 1002;
+}
+
+ .hubspot-search-styled-submit:hover { background-color:rgba(0,0,0,0.03) !important; }
+
+ .hubspot-search-styled-submit svg { width:20px; height:20px; fill:currentColor; pointer-events:none; }
+
+ .hubspot-search-styled-suggestions {
+  position:absolute;
+  top: 100%;
+  width:100%;
+  z-index:999;
+  max-height:350px;
+  overflow-y:auto;
+  box-shadow:var(--s-shadow);
+  padding:0;
+  margin:0;
+  background:var(--s-bg-color);
+  list-style:none;
+  border:1px solid var(--s-border-color);
+  border-radius:0 0 var(--s-radius) var(--s-radius);
+  display:none;
+  margin-top: -1px; 
+}
+
+ .hubspot-search-styled-open .hubspot-search-styled-suggestions { display:block; }
+
+ .hubspot-search-styled-item a {
+  display:flex;
+  align-items:start;
+  padding:var(--s-item-padding);
+  border-bottom:1px solid #f1f5f9;
+  text-decoration:none;
+  color:var(--s-text-main);
+  transition:background 0.2s ease;
+}
+
+ .hubspot-search-styled-item a:hover,
+ .hubspot-search-styled-item a:focus { background-color:var(--s-hover-bg); }
+
+ .hubspot-search-styled-img {
+  width:var(--s-img-size);
+  height:var(--s-img-size);
+  flex-shrink:0;
+  margin-right:15px;
+  border-radius:4px;
+  overflow:hidden;
+  background:#eee;
+  border:1px solid #f1f5f9;
+}
+
+ .hubspot-search-styled-img img { width:100%; height:100%; object-fit:cover; }
+
+ .hubspot-search-styled-content { flex-grow:1; }
+
+ .hubspot-search-styled-title {
+  display:block;
+  font-weight:600;
+  font-size:15px;
+  margin-bottom:2px;
+  color:var(--s-title-color);
+}
+
+ .hubspot-search-styled-desc { font-size:13px; color:var(--s-text-light); margin:0; line-height:1.4; }
+
+ .hubspot-search-styled-header {
+  padding:10px 16px;
+  font-size:11px;
+  text-transform:uppercase;
+  color:var(--s-text-light);
+  background:#f9f9f9;
+  border-bottom:1px solid #f1f5f9;
+  font-weight:bold;
+  letter-spacing:0.5px;
+}
+
+ .hubspot-search-styled-load-more {
+  text-align:center;
+  padding:var(--s-item-padding);
+  background-color:var(--s-btn-bg);
+  color:var(--s-brand-color);
+  font-weight:bold;
+  cursor:pointer;
+  list-style:none;
+  font-size:14px;
+  border-top:1px solid var(--s-btn-hover-bg);
+  transition:all 0.2s;
+  position:sticky;
+  bottom:0;
+}
+
+ .hubspot-search-styled-load-more:hover { background-color:var(--s-btn-hover-bg); }
+
+ .hubspot-search-styled-content span.hs-search-highlight { background-color:var(--highlight); }
+
+ /* ============================================
+    NEW: CONFIGURATION PANEL STYLES
+    ============================================ */
+ .hubspot-search-styled-config-panel {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 24px;
+ }
+ .config-header { font-size: 13px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; border-bottom: 1px solid #e2e8f0; padding-bottom: 8px; }
+ .config-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+ .config-group { display: flex; flex-direction: column; gap: 4px; }
+ .config-group.full-width { grid-column: 1 / -1; }
+ .config-group label { font-size: 12px; font-weight: 600; color: #64748b; }
+ .config-group input[type="text"], .config-group input[type="number"], .config-group select {
+    padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 14px; color: #334155; outline: none; transition: border-color 0.2s;
+ }
+ .config-group input:focus, .config-group select:focus { border-color: var(--s-brand-color); }
+ .config-group.checkbox-group { flex-direction: row; align-items: center; justify-content: start; gap: 8px; margin-top: auto; height: 38px; }
+ .config-group.checkbox-group input { width: 16px; height: 16px; accent-color: var(--s-brand-color); }
+
+ /* ============================================
+    GRID RESULTS & PAGINATION
+    ============================================ */
+ .hubspot-search-styled-results-area { margin-top: 30px; display: flex; flex-direction: column; gap: 30px; padding-top: 20px; }
+ .hubspot-search-styled-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+ 
+ .hubspot-search-styled-card {
+    background: white; border: 1px solid var(--s-border-color); border-radius: 12px; overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; display: flex; flex-direction: column; text-decoration: none; height: 100%;
+ }
+ .hubspot-search-styled-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); border-color: var(--s-brand-color); }
+ 
+ .hubspot-search-styled-card-img { height: 180px; background: #f1f5f9; overflow: hidden; position: relative; border-bottom: 1px solid #f1f5f9; }
+ .hubspot-search-styled-card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+ .hubspot-search-styled-card:hover .hubspot-search-styled-card-img img { transform: scale(1.05); }
+ 
+ .hubspot-search-styled-card-content { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; }
+ .hubspot-search-styled-card-title { font-size: 18px; font-weight: 700; color: var(--s-title-color); margin-bottom: 10px; line-height: 1.4; }
+ .hubspot-search-styled-card-desc { font-size: 14px; color: var(--s-text-light); line-height: 1.6; margin-bottom: 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; flex-grow: 1; }
+ .hubspot-search-styled-card-cta { font-size: 14px; font-weight: 600; color: var(--s-brand-color); margin-top: auto; display: flex; align-items: center; gap: 5px; padding-top: 15px; border-top: 1px solid #f1f5f9; }
+
+ /* LOAD MORE BUTTON */
+ .hubspot-search-styled-grid-load-more { align-self: center; margin-top: 20px; padding: 14px 40px; background: var(--s-brand-color); color: white; border: none; border-radius: 50px; font-weight: 600; font-size: 15px; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 122, 140, 0.2); transition: all 0.2s; }
+ .hubspot-search-styled-grid-load-more:hover { background-color: #00606e; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 122, 140, 0.3); }
+
+ /* NEW: NUMBERED PAGINATION STYLES */
+ .hubspot-search-pagination { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: 40px; flex-wrap: wrap; }
+ .hs-page-btn {
+    min-width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    border-radius: 6px; border: 1px solid #e2e8f0; background: white; color: #64748b; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.2s;
+ }
+ .hs-page-btn:hover:not(:disabled) { border-color: var(--s-brand-color); color: var(--s-brand-color); background: #f0f9ff; }
+ .hs-page-btn.active { background: var(--s-brand-color); color: white; border-color: var(--s-brand-color); }
+ .hs-page-btn:disabled { opacity: 0.5; cursor: not-allowed; background: #f8fafc; }
+
+ .hubspot-search-loader { text-align: center; color: var(--s-text-light); padding: 40px; font-size: 1.1rem; }

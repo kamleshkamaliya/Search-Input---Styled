@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HubSpot Search | Kamlesh Kamaliya</title>
+    
+    <!-- Tailwind CSS (For Landing Page Layout) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- YOUR CUSTOM MODULE STYLES (Isolated) -->
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Smooth scrolling for anchor links */
+        html { scroll-behavior: smooth; }
+        /* Hide scrollbar for cleaner look in specific areas if needed */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#007a8c',
+                        dark: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-600 antialiased flex flex-col min-h-screen">
+
+    <!-- 1. NAVIGATION -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <span class="text-2xl font-bold text-slate-800 tracking-tight">Kamlesh<span class="text-primary">.Dev</span></span>
+                </div>
+                
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="https://github.com/kamleshkamaliya" target="_blank" class="text-slate-500 hover:text-primary transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="mailto:kamaliyakamlesh9@gmail.com" class="text-slate-500 hover:text-primary transition-colors">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                    <a href="https://www.upwork.com/freelancers/~019cc00d18b364b367" target="_blank" 
+                       class="bg-primary hover:bg-[#00606e] text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-lg shadow-cyan-500/20">
+                        Hire Me on Upwork
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Simple implementation) -->
+                <div class="md:hidden flex items-center">
+                     <a href="https://www.upwork.com/freelancers/~019cc00d18b364b367" class="text-primary font-semibold text-sm">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <div class="relative  pt-12 pb-12 lg:pt-20 lg:pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+                Advanced <span class="text-primary">Search Module</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-500 mb-10 max-w-2xl mx-auto leading-relaxed">
+                A highly configurable search solution. Use the panel below to test Pagination, Limits, and API responsiveness in real-time.
+            </p>
+
+            <!-- LIVE DEMO WRAPPER -->
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl shadow-slate-200/50 border border-slate-200 p-6 md:p-8 relative text-left">
+                
+                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-cyan-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest shadow-lg">
+                    Live Playground
+                </div>
+
+                <!-- === NEW: DEVELOPER CONFIGURATION PANEL === -->
+                <div class="hubspot-search-styled-config-panel">
+                    <div class="config-header">
+                        <i class="fas fa-sliders-h"></i> Configuration Settings
+                    </div>
+                    
+                    <div class="config-grid">
+                        <!-- Domain -->
+                        <div class="config-group full-width">
+                            <label>Target Domain</label>
+                            <input type="text" id="conf-domain" value="www.hubspot.com" placeholder="e.g. www.hubspot.com">
+                        </div>
+
+                        <!-- Pagination Mode -->
+                        <div class="config-group">
+                            <label>Pagination Mode</label>
+                            <select id="conf-pagination-mode">
+                                <option value="loadMore">Load More Button</option>
+                                <option value="pagination">Numbered Pagination</option>
+                            </select>
+                        </div>
+
+                        <!-- Limits -->
+                        <div class="config-group">
+                            <label>Grid Limit</label>
+                            <input type="number" id="conf-grid-limit" value="6" min="1" max="20">
+                        </div>
+
+                        <!-- Dropdown Limit -->
+                        <div class="config-group">
+                            <label>Dropdown Limit</label>
+                            <input type="number" id="conf-typeahead-limit" value="3" min="1" max="10">
+                        </div>
+
+                        <!-- Auto Scroll -->
+                        <div class="config-group checkbox-group">
+                            <input type="checkbox" id="conf-auto-scroll" checked>
+                            <label for="conf-auto-scroll">Smooth Auto-Scroll</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- ========================================= -->
+
+                <!-- === THE SEARCH MODULE === -->
+                <div class="hubspot-search-styled-field mt-6">
+                   <div class="hubspot-search-styled-bar">
+                      <form data-hs-do-not-collect="true" action="/hs-search-results" onsubmit="return false;">
+                         <input id="hubspot-search-styled-term" type="text" class="hubspot-search-styled-input" name="term" autocomplete="off" aria-label="Search" placeholder="Type 'Marketing' and press Enter...">
+                         
+                         <!-- Hidden Fields -->
+                         <input type="hidden" name="type" value="SITE_PAGE">
+                         <input type="hidden" name="type" value="BLOG_POST">
+                         
+                         <button aria-label="Search" class="hubspot-search-styled-submit">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z" fill="currentColor"></path>
+                            </svg>
+                         </button>
+                      </form>
+                   </div>
+                   <ul class="hubspot-search-styled-suggestions"></ul>
+                   <script id="hubspot-search-styled-valid-content-types" type="application/json">
+                        ["SITE_PAGE", "BLOG_POST", "LANDING_PAGE", "HS_CASE_STUDY"]
+                   </script>
+                </div>
+                <!-- === MODULE END === -->
+
+            </div>
+            
+            <p class="mt-4 text-sm text-slate-400">
+                <i class="fas fa-info-circle mr-1"></i> Settings apply instantly. Press Enter to see Grid view changes.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- 3. RESULTS AREA SECTION -->
+    <!-- Added ID 'results-section' and 'hidden' class to fix empty space issue -->
+    <section id="results-section" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20 hidden transition-all duration-500 ease-in-out">
+         <div class="hubspot-search-styled-results-area min-h-[50px]">
+             <!-- Grid Results will be injected here by index.js -->
+         </div>
+    </section>
+
+    <!-- 4. FEATURES GRID -->
+    <section class="bg-white py-20 border-t border-slate-100 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Technical Highlights</h2>
+                <p class="mt-4 text-slate-500">Why this implementation stands out</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 mb-4 text-xl">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Dynamic Pagination</h3>
+                    <p class="text-sm text-slate-600">Smart "Load More" logic using AJAX offsets to keep the DOM light and fast.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600 mb-4 text-xl">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Auto-Scroll UX</h3>
+                    <p class="text-sm text-slate-600">Smoothly scrolls the container to exact position of new results.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-4 text-xl">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Scoped Styling</h3>
+                    <p class="text-sm text-slate-600">BEM naming convention ensures CSS never conflicts with global themes.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-6 bg-slate-50 rounded-xl border border-slate-100 hover:-translate-y-1 transition-transform duration-300">
+                    <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-4 text-xl">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 mb-2">Live API</h3>
+                    <p class="text-sm text-slate-600">Capable of querying any live HubSpot portal domain instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CTA SECTION -->
+    <section class="bg-dark py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Ready to build high-quality HubSpot Modules?</h2>
+            <p class="text-slate-400 text-lg mb-10">
+                I specialize in custom HubSpot development. Let's create something amazing together.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://www.upwork.com/freelancers/~019cc00d18b364b367" target="_blank" 
+                   class="bg-primary hover:bg-[#00606e] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg shadow-cyan-900/50">
+                   Hire Kamlesh on Upwork
+                </a>
+                <a href="mailto:kamaliyakamlesh9@gmail.com" 
+                   class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all backdrop-blur-sm">
+                   Email Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-8 text-center">
+        <p class="text-slate-500 text-sm">
+            &copy; 2024 Kamlesh Kamaliya. Built with precision for HubSpot Developers.
+        </p>
+    </footer>
+
+    <!-- JS Logic -->
+    <!-- <script src="index.js"></script> -->
+    <script src="build.next.js"></script>
+</body>
+</html>
