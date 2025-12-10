@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Příspěvky na blogu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Případové studie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Články ze znalostní databáze",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Výsledky hledání zahrnují",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Cílové stránky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Stránky na webu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Text štítku",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Zahrnout tlačítko hledání",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Výraz hledaný na stránce",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Hledat",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Zástupný text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Výsledky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Sem lidé přejdou, když kliknutím potvrdí vyhledávání hledaného výrazu. Vyberte stránku, která obsahuje modul výsledků hledání.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Stránka pro výsledky hledání",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Toto nastavení zapněte, pokud chcete místo výchozí stránky pro globální výsledky hledání používat vlastní stránku pro výsledky hledání.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Použít vlastní stránku pro výsledky hledání",
+    "description" : "",
+    "placeholders" : null
+  }
+}

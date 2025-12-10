@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Postări blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Studii de caz",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Articole informative",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Rezultatele căutării includ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Pagini de pornire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Pagini site web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Text etichetă",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Includeți butonul de căutare",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Introducere căutare site",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Căutare",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Text substituent",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Rezultate",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Acesta este locul pe care oamenii îl accesează atunci când fac clic pentru a căuta termenul de căutare. Asigurați-vă că alegeți o pagină care conține modulul cu rezultate de căutare.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Pagina cu rezultatele de căutare",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Activați această setare pentru a utiliza o pagină personalizată cu rezultate de căutare, în locul paginii implicite cu rezultate de căutare globale.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Utilizare pagină personalizată cu rezultate de căutare",
+    "description" : "",
+    "placeholders" : null
+  }
+}

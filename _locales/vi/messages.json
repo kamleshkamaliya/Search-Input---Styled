@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Bài đăng blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Nghiên cứu điển hình",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Bài viết kiến thức",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Kết quả tìm kiếm bao gồm",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Trang đích",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Trang website",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Văn bản nhãn",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Bao gồm nút tìm kiếm",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Thông tin đầu vào để tìm kiếm trong site",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Tìm kiếm",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Văn bản chỗ dành sẵn",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Kết quả",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Đây là nơi mọi người được đưa đến khi bấm để tìm kiếm theo từ tìm kiếm của mình. Hãy đảm bảo bạn chọn trang chứa mô-đun kết quả tìm kiếm.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Trang kết quả tìm kiếm",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Bật cài đặt này để sử dụng trang kết quả tìm kiếm tùy chỉnh thay cho trang kết quả tìm kiếm toàn hệ thống mặc định.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Sử dụng trang kết quả tìm kiếm tùy chỉnh",
+    "description" : "",
+    "placeholders" : null
+  }
+}

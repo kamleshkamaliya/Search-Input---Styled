@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogplasings",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Gevallestudies",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Kennisartikels",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Soekresultate sluit in",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Landingsblaaie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Webwerfbladsye",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Etiketteks",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Sluit soekknoppie in",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Webwerfsoektogtoevoer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Soek",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Plekhouerteks",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Resultate",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Dit is waarheen mense sal gaan as hulle klik om vir hul soekterm te soek. Maak seker jy kies 'n bladsy wat die soekresultatemodule bevat.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Bladsy vir soekresultate",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Skakel hierdie instelling aan om 'n pasmaaksoekresultatebladsy te gebruik in plaas van die verstek- globale soekresultatebladsy.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Gebruik pasmaaksoekresultatebladsy",
+    "description" : "",
+    "placeholders" : null
+  }
+}

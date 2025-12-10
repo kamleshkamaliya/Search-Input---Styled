@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogové príspevky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Prípadové štúdie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Vedomostné články",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Výsledky vyhľadávania zahŕňajú",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Vstupné stránky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Stránky webu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Text štítka",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Zahrnúť tlačidlo vyhľadávania",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Zadaný text vyhľadávania na webe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Hľadať",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Text zástupného symbolu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Výsledky",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Sem ľudia chodia, keď chcú kliknutím vyhľadať hľadaný výraz. Uistite sa, že ste vybrali stránku, ktorá obsahuje modul pre výsledky vyhľadávania.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Stránka s výsledkami vyhľadávania",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Zapnutím tohto nastavenia použijete vlastnú stránku s výsledkami vyhľadávania namiesto predvolenej globálnej stránky s výsledkami vyhľadávania.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Použiť vlastnú stránku s výsledkami vyhľadávania",
+    "description" : "",
+    "placeholders" : null
+  }
+}

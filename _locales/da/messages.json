@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogindlæg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Casestudier",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Vidensartikler",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Søgeresultater inkluderer",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Landingssider",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Websider",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Mærkattekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Inkluder søgeknap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Indtastning af webstedssøgning",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Søg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Pladsholdertekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Resultater",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Dette er, hvor folk kommer hen, når de klikker for at søge efter deres term. Sørg for at vælge en side, som indeholder modulet med søgeresultater.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Side med søgeresultater",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Aktivér denne indstilling for at bruge en side med tilpassede søgeresultater i stedet for standardsiden med globale søgeresultater.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Bruge side med tilpassede søgeresultater",
+    "description" : "",
+    "placeholders" : null
+  }
+}

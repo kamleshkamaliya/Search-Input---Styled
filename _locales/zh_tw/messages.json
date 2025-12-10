@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "部落格文章",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "個案研究",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "知識文章",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "包含搜尋結果",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "登陸頁面",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "網站頁面",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "標籤文字",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "包含搜尋按鈕",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "網站搜尋輸入",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "搜尋",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "預留位置文字",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "目錄",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "這是人們進行點擊以搜尋其搜尋字詞時會前往之處。請務必選擇內含搜尋結果模組的頁面。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "搜尋結果頁面",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "啟用此設定以使用自訂搜尋結果頁面，否則會使用預設的全域搜尋結果頁面。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "使用自訂搜尋結果頁面",
+    "description" : "",
+    "placeholders" : null
+  }
+}

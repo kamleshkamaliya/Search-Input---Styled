@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogberichten",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Casestudy's",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Kennisartikelen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Zoekresultaten opnemen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Landingspagina's",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Websitepagina's",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Labeltekst",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Zoekknop opnemen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Invoer doorzoeken site",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Zoeken",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Tekst tijdelijke aanduiding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Resultaten",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Dit is waar mensen naartoe zullen gaan als ze op hun zoekterm klikken. Zorg ervoor dat je een pagina kiest die de zoekresultatenmodule bevat.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Pagina met zoekresultaten",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Schakel deze instelling in om een aangepaste pagina met zoekresultaten te gebruiken in plaats van de standaard algemene pagina met zoekresultaten.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Aangepaste pagina met zoekresultaten gebruiken",
+    "description" : "",
+    "placeholders" : null
+  }
+}

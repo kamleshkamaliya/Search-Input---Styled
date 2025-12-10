@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Αναρτήσεις ιστολογίου",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Μελέτες περίπτωσης",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Άρθρα γνώσης",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Τα αποτελέσματα αναζήτησης περιλαμβάνουν",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Σελίδες εισόδου",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Σελίδες ιστότοπου",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Κείμενο ετικέτας",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Συμπερίληψη του κουμπιού αναζήτησης",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Είσοδος αναζήτησης ιστότοπου",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Αναζήτηση",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Κείμενο κράτησης θέσης",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Αποτελέσματα",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Εκεί θα πηγαίνουν οι άνθρωποι όταν κάνουν κλικ για να αναζητήσουν τον όρο αναζήτησής τους. Επιλέξτε μια σελίδα που περιέχει τη μονάδα αποτελεσμάτων αναζήτησης.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Σελίδα αποτελεσμάτων αναζήτησης",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Ενεργοποιήστε αυτήν τη ρύθμιση για να χρησιμοποιήσετε μια σελίδα προσαρμοσμένων αποτελεσμάτων αναζήτησης αντί για την προεπιλεγμένη σελίδα συνολικών αποτελεσμάτων αναζήτησης.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Χρήση σελίδας προσαρμοσμένων αποτελεσμάτων αναζήτησης",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Postingan blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Studi kasus",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Artikel pengetahuan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Hasil pencarian termasuk",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Halaman tujuan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Halaman situs web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Teks label",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Termasuk tombol pencarian",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Input Pencarian Situs",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Cari",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Teks placeholder",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Hasil",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Bagian yang dituju orang saat mereka mengklik untuk mencari istilah pencarian mereka. Pastikan untuk memilih halaman yang mengandung modul hasil pencarian.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Halaman hasil pencarian",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Aktifkan pengaturan ini untuk menggunakan halaman hasil pencarian kustom, bukan halaman hasil pencarian global default.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Gunakan halaman hasil pencarian kustom",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "content_tags" : [ {
+    "name" : "SEARCH",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_BLOG",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_PAGE",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "SEARCH",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "master_language" : "en",
+  "categories" : [ "functionality" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 202174248714,
+  "label" : "Search Input - Custom",
+  "icon" : "../../../mV0_d-web-default-modules_hubspot/img/icon/edited-search-1.svg",
+  "is_available_for_new_content" : true
+}

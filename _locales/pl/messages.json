@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Wpisy na blogu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Studium przypadku",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Artykuły z bazy wiedzy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Uwzględnij wyniki wyszukiwania",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Strony docelowe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Strony w witrynie internetowej",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Tekst etykiety",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Uwzględnij przycisk wyszukiwania",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Wyszukiwanie na stronie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Szukaj",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Tekst zastępczy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Wyniki",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "To miejsce, do którego ludzie przejdą, gdy klikną, żeby wyszukać swoje hasło. Upewnij się, że wybierasz stronę, która zawiera moduł wyników wyszukiwania.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Strona wyników wyszukiwania",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Włącz to ustawienie, aby korzystać z niestandardowej strony wyników wyszukiwania zamiast domyślnej strony globalnej wyników wyszukiwania.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Użyj niestandardowej strony wyników wyszukiwania",
+    "description" : "",
+    "placeholders" : null
+  }
+}

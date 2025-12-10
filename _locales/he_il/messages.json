@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "פוסטים בבלוג",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "תיאורי מקרה",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "מאמרי ידע",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "הכללת תוצאות חיפוש",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "דפי נחיתה",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "דפים באתרי אינטרנט",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "טקסט תווית",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "כלול לחצן חיפוש",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "קלט חיפוש באתר",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "חיפוש",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "טקסט מציין מיקום",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "תוצאות",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "זה המקום שאליו אנשים יעברו כאשר יחפשו את מונח החיפוש שלהם. הקפד לבחור דף שמכיל את מודול תוצאות החיפוש.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "דף תוצאות חיפוש",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "הפעל הגדרה זו כדי להשתמש בדף תוצאות חיפוש מותאם אישית במקום דף תוצאות החיפוש הכללי, המהווה ברירת מחדל.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "השתמש בדף תוצאות חיפוש מותאם אישית",
+    "description" : "",
+    "placeholders" : null
+  }
+}

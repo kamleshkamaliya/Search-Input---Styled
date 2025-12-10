@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "블로그 게시물",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "사례 연구",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "지식 문서",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "검색 결과 포함",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "랜딩 페이지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "웹사이트 페이지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "레이블 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "검색 버튼 포함",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "사이트 검색 입력",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "검색",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "플레이스홀더 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "결과",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "이것은 사용자가 검색어로 검색하기 위해 클릭할 때 이동하게 되는 위치입니다. 검색 결과 모듈이 포함된 페이지를 선택해야 합니다.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "검색 결과 페이지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "기본 전역 검색 결과 페이지 대신 사용자 지정 검색 결과 페이지를 사용하려면 이 설정을 켜십시오.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "사용자 지정 검색 결과 페이지 사용",
+    "description" : "",
+    "placeholders" : null
+  }
+}

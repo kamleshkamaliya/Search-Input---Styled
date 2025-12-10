@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Публикации в блог",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Проучване на случаи",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Статии от нания",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Резултатите от търсенето включват",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Целеви страници",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Страници в уеб сайт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Текст на етикет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Включване на бутон за търсене",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Въвеждане на търсене в сайт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Търсене",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Текст в контейнер",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Резултати",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Това е мястото, където хората ще отидат, когато щракнат, за да търсят термина си за търсене. Уверете се, че сте избрали страница, която съдържа модула с резултатите от търсенето.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Страница с резултати от търсенето",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Включете тази настройка, за да използвате страница с резултати от персонализирано търсене вместо страница с резултати от глобално търсене, което е задено по подразбиране.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Използвай страница с резултати от персонализирано търсене",
+    "description" : "",
+    "placeholders" : null
+  }
+}

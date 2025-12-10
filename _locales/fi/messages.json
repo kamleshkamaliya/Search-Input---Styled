@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogijulkaisut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Tapaustutkimukset",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Tietoartikkelit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Hakutuloksiin sisältyy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Aloitussivut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Verkkosivuston sivut",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Nimiketeksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Sisällytä hakupainike",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Sivun haun tulos",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Hae",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Paikkamerkkiteksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Tulokset",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Tänne ihmiset päätyvät hakemaan hakutermiä napsauttamalla. Varmista, että valitset sivun, joka sisältää hakutulosmoduulin.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Hakutulossivu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Ota tämä asetus käyttöön, jos haluat käyttää mukautettua hakutulossivua yleisen oletushakutulossivun sijaan.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Käytä mukautettua hakutulosivua",
+    "description" : "",
+    "placeholders" : null
+  }
+}

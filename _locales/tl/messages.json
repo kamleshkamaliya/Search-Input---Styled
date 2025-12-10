@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Mga blog post",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Mga case study",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Mga mapagkukunan ng impormasyon",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Kasama sa mga resulta ng paghahanap ang",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Mga landing page",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Mga website page",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Label text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Kasama ang button ng paghahanap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Input ng Paghahanap sa Site",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Maghanap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Teksto ng placeholder",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Mga Resulta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Dito pupunta ang mga tao kapag na-click nila ang paghahanap para hanapin ang termino. Siguraduhing pumili ng page na naglalaman ng module ng mga resulta ng paghahanap.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Page ng mga resulta ng paghahanap",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "I-on ang setting na ito para gamitin ang page na custom na mga resulta ng paghahanap sa halip na ang default na page ng mga resulta ng paghahanap.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Gamitin ang page ng custom na mga resulta ng paghahanap",
+    "description" : "",
+    "placeholders" : null
+  }
+}

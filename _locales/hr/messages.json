@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Objave na blogu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Analize slučaja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Članci o znanju",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Rezultati pretraživanja uključuju",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Odredišne stranice",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Stranice web-mjesta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Tekst oznake",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Uključi gumb za pretraživanje",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Unos za pretraživanje web-mjesta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Traži",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Tekst rezerviranog mjesta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Rezultati",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "To je mjesto na koje će osobe dospjeti kada kliknu za pretraživanje pojma koji žele pretražiti. Pobrinite se da odaberete stranicu koja sadržava modul s rezultatima pretraživanja.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Stranica s rezultatima pretraživanja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Uključite ovu značajku da biste upotrebljavali stranicu s prilagođenim rezultatima pretraživanja umjesto stranice sa zadanim globalnim rezultatima pretraživanja.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Upotrijebite stranicu s prilagođenim rezultatima pretraživanja",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "โพสต์ในบล็อก",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "กรณีศึกษา",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "บทความให้ความรู้",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "ผลการค้นหาประกอบด้วย",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "หน้าเริ่มต้น",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "หน้าเว็บไซต์",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "ข้อความป้าย",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "มีปุ่มค้นหา",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "การป้อนคำค้นหาในเว็บไซต์",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "ค้นหา",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "ข้อความตัวยึดตำแหน่ง",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "ผลลัพธ์",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "นี่คือตำแหน่งที่ผู้คนจะไปเมื่อคลิกเพื่อค้นหาคำที่ใช้ค้นหา โปรดตรวจดูว่าคุณเลือกหน้าที่มีโมดูลผลการค้นหา",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "หน้าผลลัพธ์การค้นหา",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "เปิดตัวเลือกนี้เพื่อใช้หน้าผลลัพธ์การค้นหาที่กำหนดเองแทนหน้าผลลัพธ์การค้นหาทั่วไป",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "ใช้หน้าผลลัพธ์การค้นหาที่กำหนดเอง",
+    "description" : "",
+    "placeholders" : null
+  }
+}

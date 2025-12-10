@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogbejegyzések",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Esettanulmányok",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Tudásbáziscikkek",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "A keresési eredmények tartalmazzák",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Kezdőlapok",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Honlap oldalai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Címke szövege",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Keresés gombot tartalmazza",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Bevitel a honlapon történő kereséshez",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Keresés",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Helyőrző szöveg",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Eredmények",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Ez nyílik meg, amikor valaki kattintással keresni kezdi a keresőkifejezést. Mindenképpen olyan oldalt válasszon, amely a keresési eredmények modult tartalmazza.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Keresési eredmények oldal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Kapcsolja be ezt a beállítást, ha az alapértelmezett globális keresési eredmények oldal helyett egyéni keresési eredmények oldalt kíván használni.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Egyéni keresési eredmények oldal használata",
+    "description" : "",
+    "placeholders" : null
+  }
+}

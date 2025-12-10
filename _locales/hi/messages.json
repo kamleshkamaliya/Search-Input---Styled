@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "ब्लॉग पोस्ट",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "केस का अध्ययन",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "नॉलेज आर्टिकल्स",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "खोज परिणाम शामिल हैं",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "लैंडिंग पेज",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "वेबसाइट के पेज",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "लेबल टेक्स्ट",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "सर्च बटन शामिल करें",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "साइट सर्च इनपुट",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "खोजें",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "प्लेसहोल्डर का टेक्स्ट",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "परिणाम",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "यह वह जगह है जहां लोग अपने सर्च टर्म को खोजने के लिए क्लिक करने पर जाएंगे। सर्च रिजल्ट मॉड्यूल वाले पेज को चुनना सुनिश्चित करें।",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "रिजल्ट पेज सर्च करें",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "डिफ़ॉल्ट ग्लोबल सर्च रिजल्ट पेज के बजाय कस्टम सर्च रिजल्ट पेज का उपयोग करने के लिए इस सेटिंग को चालू करें।",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "कस्टम सर्च रिजल्ट पेज का उपयोग करें",
+    "description" : "",
+    "placeholders" : null
+  }
+}

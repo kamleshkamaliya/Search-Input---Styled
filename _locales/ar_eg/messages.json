@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "منشورات المدونة",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "دراسات الحالة",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "مقالات معرفية",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "تشتمل نتائج البحث على",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "الصفحات المنتقل إليها",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "صفحات موقع الويب",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "نص التسمية",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "تضمين زر البحث",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "إدخال البحث في الموقع",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "بحث",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "نص العنصر النائب",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "النتائج",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "هذا هو الموقع الذي سينتقل إليه الأشخاص عندما ينقرون للبحث عن مصطلح البحث الخاص بهم. تأكد من اختيار صفحة تحتوي على وحدة نتائج البحث.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "صفحة نتائج البحث",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "شغّل هذا الإعداد لاستخدام صفحة نتائج بحث مخصصة بدلاً من صفحة نتائج البحث العامة الافتراضية.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "استخدم صفحة نتائج البحث المخصصة",
+    "description" : "",
+    "placeholders" : null
+  }
+}

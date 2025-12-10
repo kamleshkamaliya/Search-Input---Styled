@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Articoli blog ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Case study",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Articoli della knowledge base",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "I risultati di ricerca includono",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Landing page",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Pagine del sito web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Testo etichetta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Includi pulsante di ricerca",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Input di ricerca del sito",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Cerca",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Testo placeholder",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Risultati",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Questo è il punto in cui le persone andranno quando faranno clic per cercare un termine di ricerca. Assicurati di scegliere una pagina che contenga il modulo dei risultati di ricerca.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Pagina risultati di ricerca",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Attiva questa impostazione per utilizzare una pagina dei risultati di ricerca personalizzata invece della pagina dei risultati di ricerca globale.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Utilizza pagina risultati di ricerca personalizzata",
+    "description" : "",
+    "placeholders" : null
+  }
+}

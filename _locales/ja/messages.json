@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "ブログ記事",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "導入事例",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "ナレッジ記事",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "検索結果に次を含める：",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "ランディングページ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "ウェブサイトページ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "ラベルテキスト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "検索ボタンを含める",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "サイト検索入力",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "検索",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "プレースホルダー（仮挿入）テキスト",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "結果",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "検索語をクリックして検索した際の移動先です。検索結果モジュールを含めたページを選んでください。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "検索結果ページ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "既定のグローバル検索結果ページではなくカスタム検索結果ページを使用するには、この設定を有効にします。",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "カスタム検索結果ページを使用",
+    "description" : "",
+    "placeholders" : null
+  }
+}

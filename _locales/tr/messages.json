@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blog gönderileri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Vaka çalışmaları",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Bilgi makaleleri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Arama sonuçları şunları içerir:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Açılış sayfaları",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Web sitesi sayfaları",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Etiket metni",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Arama düğmesini dahil et",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Site arama girişi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Ara",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Yer tutucu metni",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Sonuçlar",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Bu, insanların arama terimlerini aramak için tıkladıklarında gidecekleri yerdir. Arama sonuçları modülünün bulunduğu bir sayfa seçtiğinizden emin olun.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Arama sonuçları sayfası",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Varsayılan genel arama sonuçları sayfası yerine özel bir arama sonuçları sayfası kullanmak için bu ayarı açın.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Özel arama sonuçları sayfası kullanın",
+    "description" : "",
+    "placeholders" : null
+  }
+}

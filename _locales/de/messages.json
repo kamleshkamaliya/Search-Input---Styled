@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Blogbeiträge",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Fallstudien",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Wissensdatenbank-Artikel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Suchergebnisse beinhalten",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Landingpages",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Website-Seiten",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Label-Text",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Suche-Button einbeziehen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Website-Sucheingabe",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Suchen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Platzhaltertext",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Ergebnisse",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Hierher gelangen die Besucher, wenn sie auf ihren Suchbegriff klicken. Achten Sie darauf, eine Seite zu wählen, die das Suchergebnis-Modul enthält.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Seite mit Suchergebnissen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Aktivieren Sie diese Einstellung, um eine benutzerdefinierte Suchergebnisseite anstelle der standardmäßigen globalen Suchergebnisseite zu verwenden.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Benutzerdefinierte Suchergebnisseite verwenden",
+    "description" : "",
+    "placeholders" : null
+  }
+}

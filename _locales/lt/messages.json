@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Tinklaraščio įrašai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Atvejų analizės",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Informaciniai straipsniai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Paieškos rezultatai apima",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Įėjimo tinklalapiai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Interneto svetainės puslapiai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Etiketės tekstas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Įtraukti paieškos mygtuką",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Svetainės paieškos įvestis",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Paieška",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Vietos rezervavimo ženklo tekstas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Rezultatai",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Čia žmonės bus nukreipti, kai spustelės norėdami ieškoti savo paieškos termino. Pasirinkite puslapį, kuriame yra paieškos rezultatų modulis.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Paieškos rezultatų puslapis",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Įjunkite šią nuostatą, jei norite naudoti pasirenkamąjį paieškos rezultatų puslapį vietoj numatytojo visuotinės paieškos rezultatų puslapio.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Naudoti pasirinktinį paieškos rezultatų puslapį",
+    "description" : "",
+    "placeholders" : null
+  }
+}

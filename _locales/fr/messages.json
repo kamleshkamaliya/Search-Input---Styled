@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Articles de blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Études de cas",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Articles de la base de connaissances",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Les résultats de recherche comprennent",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Pages de destination",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Pages de site Web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Texte du libellé",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Inclure un bouton de recherche",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Champ de recherche de site",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Rechercher",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Texte d'espace réservé",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Résultats",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "C'est la page vers laquelle les utilisateurs seront redirigés après avoir lancé la recherche de leur terme. Veillez à choisir une page contenant le module de résultats de recherche.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Page des résultats de recherche",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Activez ce paramètre pour utiliser une page de résultats de recherche personnalisée au lieu de la page des résultats de recherche globale par défaut.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Utiliser une page de résultats de recherche personnalisée",
+    "description" : "",
+    "placeholders" : null
+  }
+}

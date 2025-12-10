@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Objave v blogu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Študije primerov",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Strokovni članki",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Rezultati iskanja vsebujejo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Pristajalne strani",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Spletne strani",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Besedilo nalepke",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Vključi gumb za iskanje",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Vnos iskanja po spletnem mestu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Išči",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Besedilo nadomestni znak",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Rezultati",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "To je spletna stran, na katero bodo ljudje usmerjeni, ko bodo kliknili na iskanje iskalnega izraza. Prepričajte se, da ste izbrali stran, ki vsebuje modul rezultatov iskanja.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Stran z rezultati iskanja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Vklopite to nastavitev, če želite namesto privzete strani z globalnimi rezultati iskanja uporabiti stran z rezultati iskanja po meri.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Uporabite stran z rezultati iskanja po meri",
+    "description" : "",
+    "placeholders" : null
+  }
+}

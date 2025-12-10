@@ -1,0 +1,564 @@
+
+{% set class_prefix = "eventionllc-search" %} 
+{% set enable_auto_scroll = true %}
+
+{% set search_page = module.results.use_custom_search_results_template is truthy and module.results.path_id ? content_by_id(module.results.path_id).absolute_url : site_settings.content_search_results_page_path %}
+{% unless (search_page is string_containing "//") %}
+  {% set search_page = "/" ~ search_page %}
+{% endunless %}
+{% set search_page = search_page|regex_replace("http:", "") %}
+{% set content_types = [
+  { field_name: "website_pages", content_type: "SITE_PAGE" },
+  { field_name: "landing_pages", content_type: "LANDING_PAGE" },
+  { field_name: "blog_posts", content_type: "BLOG_POST" },
+  { field_name: "listing_pages", content_type: "LISTING_PAGE" },
+  { field_name: "knowledge_articles", content_type: "KNOWLEDGE_ARTICLE" },
+  { field_name: "case_studies", content_type: "HS_CASE_STUDY" }
+] %}
+
+{% require_head %}
+  <script id="{{ class_prefix }}-valid-content-types" type="application/json">
+    [
+      {% for type in content_types %}
+        "{{ type.content_type }}"{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  </script>
+{% end_require_head %}
+
+{% require_css %}
+<style>
+  {% scope_css %}
+
+
+
+  /* =========================================
+     THEME SETTINGS (CHANGE BRANDING HERE) 
+     ========================================= */
+  .{{ class_prefix }}-field {
+    --s-brand-color:      #007a8c;
+    --s-title-color:      #2d3e50;
+    --s-text-main:        #333333;
+    --s-text-light:       #7c98b6;
+    --s-bg-color:         #ffffff;
+    --s-border-color:     #cbd6e2; /* Thoda darker border for input */
+    
+    /* --- Interactions --- */
+    --s-hover-bg:         #f5f8fa;
+    --s-btn-bg:           #e5f5f8;
+    --s-btn-hover-bg:     #d0eff5;
+    --s-focus-shadow:     rgba(0, 122, 140, 0.15); /* Focus Glow Color */
+    
+    /* --- Layout & Sizes --- */
+    --s-radius:           3px;     /* Input Radius */
+    --s-img-size:         50px;
+    --s-item-padding:     12px;
+    --s-shadow:           0 6px 16px rgba(0,0,0,0.1);
+    
+     --highlight:var(--s-btn-hover-bg);
+
+    /* Required for positioning */
+    position: relative;
+    width: 100%;
+    font-family: inherit; /* Inherit site font */
+  }
+
+  /* Universal Box Sizing within Module */
+  .{{ class_prefix }}-field *,
+  .{{ class_prefix }}-field *::before,
+  .{{ class_prefix }}-field *::after {
+    box-sizing: border-box;
+  }
+  
+  
+  /* =========================================
+     INPUT BAR STYLING (UPDATED)
+     ========================================= */
+  
+  .{{ class_prefix }}-bar {
+    position: relative;
+    width: 100%;
+  }
+
+  /* Search Input Field */
+  .{{ class_prefix }}-input {
+    width: 100%;
+    padding: 13px 16px; /* User Preference */
+    padding-right: 50px; /* Space for search icon */
+    background-color: var(--s-bg-color);
+    border: 1px solid var(--s-border-color);
+    border-radius: var(--s-radius);
+    font-size: 16px; /* 16px prevents zoom on iPhone */
+    color: var(--s-text-main);
+    line-height: 1.5;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+
+  /* Input Focus State (UX Best Practice) */
+  .{{ class_prefix }}-input:focus {
+    border-color: var(--s-brand-color);
+    box-shadow: 0 0 0 3px var(--s-focus-shadow);
+  }
+
+  /* Placeholder Style */
+  .{{ class_prefix }}-input::placeholder {
+    color: #99aab5;
+  }
+
+  /* Search Button (Absolute Positioned) */
+  .{{ class_prefix }}-submit {
+    position: absolute;
+    bottom: 0;
+    right: 4px; /* Thoda spacing right edge se */
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    margin: 0;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--s-brand-color); /* Icon Color */
+    border-radius: var(--s-radius);
+    transition: background 0.2s ease;
+  }
+
+  /* Button Hover Effect */
+  .{{ class_prefix }}-submit:hover {
+    background-color: rgba(0,0,0,0.03) !important; /* Subtle hover circle */
+  }
+
+  .{{ class_prefix }}-submit svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    pointer-events: none;
+  }
+  
+  /* =========================================
+     COMPONENT STYLES
+     ========================================= */
+
+  /* Dropdown List Container */
+  .{{ class_prefix }}-suggestions {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    max-height: 350px;
+    overflow-y: auto;
+    box-shadow: var(--s-shadow);
+    padding: 0;
+    margin: 0;
+    background: var(--s-bg-color);
+    list-style: none;
+    border: 1px solid var(--s-border-color);
+    border-radius: 0 0 var(--s-radius) var(--s-radius);
+    display: none; 
+  }
+
+  /* Open State */
+  .{{ class_prefix }}-open .{{ class_prefix }}-suggestions {
+    display: block;
+  }
+
+  /* Result Item Link */
+  .{{ class_prefix }}-item a {
+    display: flex;
+    align-items: start;
+    padding: var(--s-item-padding);
+    border-bottom: 1px solid var(--s-border-color);
+    text-decoration: none;
+    color: var(--s-text-main);
+    transition: background 0.2s ease;
+  }
+
+  /* Hover State */
+  .{{ class_prefix }}-item a:hover, 
+  .{{ class_prefix }}-item a:focus {
+    background-color: var(--s-hover-bg);
+  }
+
+  /* Image Thumbnail */
+  .{{ class_prefix }}-img {
+    width: var(--s-img-size);
+    height: var(--s-img-size);
+    flex-shrink: 0;
+    margin-right: 15px;
+    border-radius: var(--s-radius);
+    overflow: hidden;
+    background: #eee;
+    border: 1px solid var(--s-border-color);
+  }
+
+  .{{ class_prefix }}-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Content Wrapper */
+  .{{ class_prefix }}-content {
+    flex-grow: 1;
+  }
+
+  /* Title */
+  .{{ class_prefix }}-title {
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+    color: var(--s-title-color);
+  }
+
+  /* Description */
+  .{{ class_prefix }}-desc {
+    font-size: 13px;
+    color: var(--s-text-light);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  /* Header (e.g. "Results for...") */
+  .{{ class_prefix }}-header {
+    padding: 8px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--s-text-light);
+    background: #f9f9f9; /* Static light grey for header is usually fine */
+    border-bottom: 1px solid var(--s-border-color);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  /* Load More Button */
+  .{{ class_prefix }}-load-more {
+    text-align: center;
+    padding: var(--s-item-padding);
+    background-color: var(--s-btn-bg);
+    color: var(--s-brand-color);
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    font-size: 14px;
+    border-top: 1px solid var(--s-btn-hover-bg); /* Subtle border */
+    transition: all 0.2s;
+    position: sticky;
+    bottom: 0;
+  }
+
+  .{{ class_prefix }}-load-more:hover {
+    background-color: var(--s-btn-hover-bg);
+  }
+  
+  .{{ class_prefix }}-content span.hs-search-highlight {
+   
+    background-color:var(--highlight);
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+
+{# ========================================================== #}
+{#  HTML MARKUP                                               #}
+{# ========================================================== #}
+<div class="{{ class_prefix }}-field">
+    <div class="{{ class_prefix }}-bar">
+      <form data-hs-do-not-collect="true" action="{{ search_page|escape_url }}">
+        {% if module.field_label %}
+          <label for="{{ class_prefix }}-term">{{ module.field_label|sanitize_html }}</label>
+        {% endif %}
+        
+        <input id="{{ class_prefix }}-term" type="text" class="{{ class_prefix }}-input" name="term" autocomplete="off" aria-label="{{ module.field_label|escape_attr || "Search" }}" placeholder="{{ module.placeholder|escape_attr }}">
+
+        {% for type in content_types %}
+          {% if module.content_types[type.field_name] is truthy %}
+            <input type="hidden" name="type" value="{{ type.content_type }}">
+          {% endif %}
+        {% endfor %}
+
+        {% if module.include_search_button %}
+          <button aria-label="Search" class="{{ class_prefix }}-submit">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M10 5C7.23858 5 5 7.23858 5 10C5 12.7614 7.23858 15 10 15C11.381 15 12.6296 14.4415 13.5355 13.5355C14.4415 12.6296 15 11.381 15 10C15 7.23858 12.7614 5 10 5ZM3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10C17 11.5719 16.481 13.0239 15.6063 14.1921L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.1921 15.6063C13.0239 16.481 11.5719 17 10 17C6.13401 17 3 13.866 3 10Z" fill="currentColor"/>
+            </svg>
+          </button>
+        {% endif %}
+      </form>
+    </div>
+    
+    <ul class="{{ class_prefix }}-suggestions"></ul>
+</div>
+
+
+{# ========================================================== #}
+{#  JAVASCRIPT LOGIC                                          #}
+{# ========================================================== #}
+<script>
+(function() {
+  var PREFIX = "{{ class_prefix }}"; 
+  var AUTO_SCROLL = {{ enable_auto_scroll }}; // HubL se value le raha hai
+
+  var hsSearch = function (_instance) {
+    var TYPEAHEAD_LIMIT = 3; 
+    var searchTerm = '';
+    var searchForm = _instance;
+    var searchField = _instance.querySelector('.' + PREFIX + '-input');
+    var searchResults = _instance.querySelector('.' + PREFIX + '-suggestions');
+    
+    var currentOffset = 0; 
+    var totalResults = 0;
+
+    // --- Helper: URL Params ---
+    const addTypeParamsFromUrl = function (formParams) {
+      const validContentTypesElement = document.getElementById(PREFIX + '-valid-content-types');
+      if (validContentTypesElement) {
+        try {
+          const validContentTypes = Object.freeze(JSON.parse(validContentTypesElement.textContent));
+          const urlParams = new URLSearchParams(window.location.search);
+          const typeParams = urlParams.getAll('type');
+          let newParams = [];
+          typeParams.forEach(function (typeValue) {
+            if (!validContentTypes.includes(typeValue)) return;
+            newParams.push('type=' + encodeURIComponent(typeValue));
+          });
+          return newParams.length > 0 ? newParams : formParams;
+        } catch (e) {
+          console.warn('Error parsing valid content types:', e);
+        }
+      }
+      return formParams;
+    };
+
+    const searchOptions = function () {
+      let formParams = [];
+      const form = _instance.querySelector('form');
+      for (let i = 0; i < form.querySelectorAll('input[type=hidden]').length; i++) {
+        const e = form.querySelectorAll('input[type=hidden]')[i];
+        if (e.name !== 'limit') {
+          formParams.push(encodeURIComponent(e.name) + '=' + encodeURIComponent(e.value));
+        }
+      }
+      const newParams = addTypeParamsFromUrl(formParams);
+      return newParams.join('&');
+    };
+
+    var debounce = function (func, wait, immediate) {
+      var timeout;
+      return function () {
+        var context = this, args = arguments;
+        var later = function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait || 200);
+        if (callNow) func.apply(context, args);
+      };
+    };
+
+    var emptySearchResults = function () {
+      searchResults.innerHTML = '';
+      searchForm.classList.remove(PREFIX + '-open');
+      currentOffset = 0;
+      totalResults = 0;
+    };
+
+    var stripHtml = function(html) {
+       if (!html) return "";
+       var tmp = document.createElement("DIV");
+       tmp.innerHTML = html;
+       return tmp.textContent || tmp.innerText || "";
+    };
+
+    // --- UI: Create Result Item (Updated for Unique IDs) ---
+    // Note: 'globalIndex' argument add kiya hai unique ID ke liye
+    var createResultItem = function(val, globalIndex) {
+        var imgHtml = '';
+        if (val.featuredImageUrl) {
+            imgHtml = "<div class='" + PREFIX + "-img'><img src='" + val.featuredImageUrl + "' alt='" + stripHtml(val.title) + "'></div>";
+        }
+        
+        var descHtml = '';
+        if(val.description) {
+           var cleanDesc = stripHtml(val.description);
+           var shortDesc = cleanDesc.length > 80 ? cleanDesc.substring(0, 80) + "..." : cleanDesc;
+           descHtml = "<p class='" + PREFIX + "-desc'>" + shortDesc + "</p>";
+        }
+
+        // ID ab unique banega: ev-search-result-0, ev-search-result-24 etc.
+        return "<li class='" + PREFIX + "-item' id='" + PREFIX + "-result-" + globalIndex + "'>" +
+               "<a href='" + val.url + "'>" +
+                  imgHtml +
+                  "<div class='" + PREFIX + "-content'>" +
+                      "<span class='" + PREFIX + "-title'>" + val.title + "</span>" +
+                      descHtml +
+                  "</div>" +
+               "</a>" +
+               "</li>";
+    };
+
+    var fillSearchResults = function (response, isAppend) {
+      var items = [];
+      
+      if (!isAppend) {
+          items.push("<li class='" + PREFIX + "-header'>Results for \"" + response.searchTerm + '"</li>');
+      }
+
+      // Loop items
+      response.results.forEach(function (val, index) {
+        // Calculate Global Index (offset + current loop index)
+        var globalIndex = isAppend ? (currentOffset + index) : index;
+        items.push(createResultItem(val, globalIndex));
+      });
+
+      var existingBtn = searchResults.querySelector('.' + PREFIX + '-load-more');
+      if(existingBtn) {
+          existingBtn.remove();
+      }
+
+      if (totalResults > (currentOffset + TYPEAHEAD_LIMIT)) {
+          var remaining = totalResults - (currentOffset + TYPEAHEAD_LIMIT);
+          items.push("<li class='" + PREFIX + "-load-more'>Load More (" + remaining + " remaining)</li>");
+      }
+
+      if (isAppend) {
+          searchResults.insertAdjacentHTML('beforeend', items.join(''));
+          
+          // --- UPDATED SCROLL LOGIC (Container Only) ---
+          if (AUTO_SCROLL) {
+              // Pehla naya item dhundo
+              var firstNewItemId = PREFIX + "-result-" + currentOffset;
+              var firstNewElement = document.getElementById(firstNewItemId);
+              
+              if (firstNewElement) {
+                  // Thoda delay taaki DOM render ho jaye
+                  setTimeout(function() {
+                      // Logic: Hum Window ko scroll nahi karenge.
+                      // Hum sirf 'searchResults' (ul) container ko scroll karenge.
+                      
+                      // 'offsetTop' hame batata hai ki ye element list me upar se kitna niche hai.
+                      // Hum container ko wahi tak scroll kar denge.
+                      
+                      searchResults.scrollTo({
+                          top: firstNewElement.offsetTop,
+                          behavior: 'smooth'
+                      });
+                  }, 100);
+              }
+          }
+
+      } else {
+          searchResults.innerHTML = items.join('');
+      }
+      
+      searchForm.classList.add(PREFIX + '-open');
+
+      var loadMoreBtn = searchResults.querySelector('.' + PREFIX + '-load-more');
+      if(loadMoreBtn){
+          loadMoreBtn.addEventListener('click', function(e){
+              e.stopPropagation();
+              e.preventDefault();
+              
+              currentOffset = currentOffset + TYPEAHEAD_LIMIT;
+              loadMoreBtn.innerHTML = "Loading...";
+              
+              getSearchResults(true);
+          });
+      }
+    };
+
+    var getSearchResults = function (isAppend) {
+      var request = new XMLHttpRequest();
+      
+      // Production URL wapas laga diya hai
+      var requestUrl =
+        'https://info.eventionllc.com/_hcms/search?&term=' +
+        encodeURIComponent(searchTerm) +
+        '&limit=' +
+        encodeURIComponent(TYPEAHEAD_LIMIT) +
+        '&offset=' + 
+        encodeURIComponent(currentOffset) + 
+        '&autocomplete=true&analytics=true&' +
+        searchOptions();
+
+      request.open('GET', requestUrl, true);
+      request.onload = function () {
+        if (request.status >= 200 && request.status < 400) {
+          var data = JSON.parse(request.responseText);
+          
+          if (data.total > 0) {
+             totalResults = data.total;
+          }
+          
+          if (data.results && data.results.length > 0) {
+            fillSearchResults(data, isAppend);
+          } else {
+            if(!isAppend) emptySearchResults();
+             var existingBtn = searchResults.querySelector('.' + PREFIX + '-load-more');
+             if(existingBtn) existingBtn.remove();
+          }
+        } else {
+          console.error('Server reached, error retrieving results.');
+        }
+      };
+      request.onerror = function () {
+        console.error('Could not reach the server.');
+      };
+      request.send();
+    };
+
+    var isSearchTermPresent = debounce(function () {
+      searchTerm = searchField.value;
+      if (searchTerm.length > 2) {
+        currentOffset = 0;
+        getSearchResults(false); 
+      } else if (searchTerm.length == 0) {
+        emptySearchResults();
+      }
+    }, 250);
+
+    searchField.addEventListener('input', function (e) {
+      if (searchTerm != searchField.value) {
+        isSearchTermPresent();
+      }
+    });
+
+    searchForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const searchInput = form.querySelector('.' + PREFIX + '-input');
+      const term = encodeURIComponent(searchInput.value);
+      let redirectUrl = form.getAttribute('action');
+      redirectUrl += (redirectUrl.includes('?') ? '&' : '?') + 'term=' + term;
+      const currentParams = searchOptions();
+      if (currentParams) redirectUrl += '&' + currentParams;
+      window.location.href = redirectUrl;
+    });
+    
+    document.addEventListener('click', function(e) {
+        if (!_instance.contains(e.target)) {
+            emptySearchResults();
+        }
+    });
+  };
+
+  if (document.attachEvent ? document.readyState === 'complete' : document.readyState !== 'loading') {
+    var modules = document.querySelectorAll('.' + PREFIX + '-field');
+    Array.prototype.forEach.call(modules, function (el) {
+      hsSearch(el);
+    });
+  } else {
+    document.addEventListener('DOMContentLoaded', function () {
+      var modules = document.querySelectorAll('.' + PREFIX + '-field');
+      Array.prototype.forEach.call(modules, function (el) {
+        hsSearch(el);
+      });
+    });
+  }
+})();
+</script>

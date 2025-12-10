@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Публікації в блозі",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Приклади з практики",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Статті бази знань",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Результати пошуку містять у собі",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Цільові сторінки",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Сторінки вебсайту",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Текст ярлика",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Увімкнути кнопку пошуку",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Вхідна інформація пошуку по сайту",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Пошук",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Текст для заповнення місця",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Результати",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Це місце, куди люди переходитимуть після натискання на пошуковий запит. Переконайтеся, що ви вибрали сторінку, яка містить модуль результатів пошуку.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Сторінка результатів пошуку",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Увімкніть цей параметр, щоб використовувати власну сторінку результатів пошуку замість сторінки результатів глобального пошуку за замовчуванням.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Використовуйте сторінку результатів користувацького пошуку",
+    "description" : "",
+    "placeholders" : null
+  }
+}

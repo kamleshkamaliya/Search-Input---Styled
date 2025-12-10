@@ -1,0 +1,82 @@
+{
+  "content_types.blog_posts.label" : {
+    "message" : "Siaran blog",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.case_studies.label" : {
+    "message" : "Kajian kes",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.knowledge_articles.label" : {
+    "message" : "Artikel pengetahuan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.label" : {
+    "message" : "Hasil carian termasuk",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.landing_pages.label" : {
+    "message" : "Halaman pendaratan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "content_types.website_pages.label" : {
+    "message" : "Halaman laman web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "field_label.label" : {
+    "message" : "Teks label",
+    "description" : "",
+    "placeholders" : null
+  },
+  "include_search_button.label" : {
+    "message" : "Sertakan butang cari",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "Input Carian Laman Web",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.default" : {
+    "message" : "Cari",
+    "description" : "",
+    "placeholders" : null
+  },
+  "placeholder.label" : {
+    "message" : "Teks ruang letak",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.label" : {
+    "message" : "Hasil",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.inline_help_text" : {
+    "message" : "Ini ialah tempat orang akan pergi apabila mereka klik untuk mencari istilah carian. Pastikan pilih halaman yang mengandungi modul hasil carian.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.path_id.label" : {
+    "message" : "Halaman hasil carian",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.inline_help_text" : {
+    "message" : "Hidupkan tetapan ini untuk menggunakan halaman hasil carian tersuai berbanding halaman hasil carian global. ",
+    "description" : "",
+    "placeholders" : null
+  },
+  "results.use_custom_search_results_template.label" : {
+    "message" : "Gunakan halaman hasil carian tersuai",
+    "description" : "",
+    "placeholders" : null
+  }
+}
